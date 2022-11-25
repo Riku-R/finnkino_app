@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+body {
+    background-image:linear-gradient(20deg, rgb(0, 0, 0), #ffc800);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: white;
+    max-width: 100%;
+    width: 900px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255, 0.7);
+}
+
+.header h1, h2, select, button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+select {
+    font-size: 1.3rem;
+    background: rgb(255, 255, 255, 0.5);
+    border-radius: 15px 0px 15px 0px;
+    width: 300px;
+    padding: 5px;
+    border: none;
+    border-bottom: 3px solid #ffc800;
+}
+
+h1, h2:hover {
+    cursor:default;
+}
+select:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #ffc800;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+button {
+    font-size: 1rem;
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-bottom: 3px solid #ffc800;
+    border-radius: 15px 0px 15px 0px;
+    background: rgb(255, 255, 255, 0.5);
+
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #ffc800;
+}
+#results {
+    overflow: auto;
+    margin-top: 10px;
+    max-width: 100%;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#title {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+#duration, #startTime, #auditorium {
+    font-size: 1.7rem;
+}
+
+#moviePic {
+    box-shadow: 0px 0px 20px rgb(255, 255, 255, 0.8);
+}
