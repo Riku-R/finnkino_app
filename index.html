@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Finnkino-app</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id="headline"></h1>
+            <h2>Valitse alue tai elokuvateatteri listasta </h2>
+            <!-- Create a list of all the Finnkino cinemas -->
+            <select name="cinemaList" id="cinemaList" onchange="showResults()">
+                <option value="Valitse listasta...">Valitse listasta...</option>
+                <option value="Pääkaupunkiseutu">Pääkaupunkiseutu</option>
+                <option value="Espoo">Espoo</option>
+                <option value="Espoo: OMENA">Espoo: OMENA</option>
+                <option value="Espoo: SELLO">Espoo: SELLO</option>
+                <option value="Helsinki">Helsinki</option>
+                <option value="Helsinki: ITIS">Helsinki: ITIS</option>
+                <option value="Helsinki: KINOPALATSI">Helsinki: KINOPALATSI</option>
+                <option value="Helsinki: MAXIM">Helsinki: MAXIM</option>
+                <option value="Helsinki: TENNISPALATSI">Helsinki: TENNISPALATSI</option>
+                <option value="Vantaa: FLAMINGO">Vantaa: FLAMINGO</option>
+                <option value="Jyväskylä: FANTASIA">Jyväskylä: FANTASIA</option>
+                <option value="Kuopio: SCALA">Kuopio: SCALA</option>
+                <option value="Kupio: SCALA">Lahti: KUVAPALATSI</option>
+                <option value="Lappeenranta: STRAND">Lappeenranta: STRAND</option>
+                <option value="Oulu: PLAZA">Oulu: PLAZA</option>
+                <option value="Pori: PROMENADI">Pori: PROMENADI</option>
+                <option value="Tampere">Tampere</option>
+                <option value="Tampere: CINE ATLAS">Tampere: CINE ATLAS</option>
+                <option value="Tampere: PLEVNA">Tampere: PLEVNA</option>
+                <option value="Turku ja Raisio">Turku ja Raisio</option>
+                <option value="Turku: KINOPALATSI">Turku: KINOPALATSI</option>
+                <option value="Raisio: LUXE MYLLY">Raisio: LUXE MYLLY</option>
+            </select>
+            <!-- Make the button for scrolling to the top -->
+            <button id="topBtn">Alkuun</button>
+        </header>
+        <!-- Make the div for the results -->
+    <div id="results"></div>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
